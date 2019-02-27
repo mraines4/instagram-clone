@@ -11,9 +11,22 @@ html, body {
 }
 
 .picture-frame {
-    width: 150px;
+    width: 33%;
 }
 
 .picture-frame img {
     width: 100%;
+}
+
+.dog-park {
+    /* if you set height, thats how big element will be no matter what. dogs will overflow */
+    min-height: 500px;
+    border: 5px solid gold;
+    display: flex;
+    flex-direction: row;
+    /* how to line up on main axis */
+    justify-content: space-evenly;
+    /* how to line up on cross axis */
+    align-items: center;
+    flex-wrap: wrap;
 }
