@@ -12,10 +12,22 @@ html, body {
 
 .picture-frame {
     width: 33%;
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+    padding: 10%;
 }
 
 .picture-frame img {
     width: 100%;
+    /* padding: 10%; */
+    border: 3px solid blue;
+    /* min-height: 400px; */
+    height: 200px;
+
 }
 
 .dog-park {
