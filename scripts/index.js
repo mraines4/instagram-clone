@@ -13,10 +13,10 @@ function respondToClick(event) {
     console.log('AM');
     console.log('PUPPER!');
 
-    console.log(event.target.parentElement);
+    console.log(event.target);
     // add the "big" class to the thing that got clicked
 
-    event.target.classList.add('big');
+    event.target.classList.toggle('big');
 }
 
 function attachClickHandler(oneElement) {

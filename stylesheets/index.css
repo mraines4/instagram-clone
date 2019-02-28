@@ -11,7 +11,7 @@ html, body {
 }
 
 .picture-frame {
-    /* width: 33%; */
+    width: 100%;
     /* border: 3px solid green; */
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ html, body {
 
 /* use the :hover pseudo-class */
 .picture-frame:hover {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     /* transform: scale(1.10); */
 }
 
@@ -40,8 +40,15 @@ html, body {
     /* padding: 10%; */
     /* border: 3px solid orange; */
     /* min-height: 400px; */
-    max-height: 80%;
+    max-height: 100%;
     max-width: 100%;
+    transition: transform 1000ms ease-in-out;
+    /* opacity: 0.6; */
+    /* 
+        1. property names or the word 'all'
+        2. duration in seconds or ms
+        3. timing function
+    */
 }
 
 .picture-frame img.big {
@@ -67,9 +74,9 @@ html, body {
         background: red;
     }
     .picture-frame {
-        /* width: 50%; */
+        width: 25%;
         /* padding: 10%; */
-        height: 200px;
+        /* height: 200px; */
     }
     .dog-park {
         flex-direction: row;
@@ -90,7 +97,8 @@ html, body {
     }
     
     .picture-frame {
-        height: 200px;
+        /* height: 200px; */
         /* padding: 10%; */
+        width: 25%;
     }
 }
