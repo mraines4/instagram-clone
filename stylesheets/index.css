@@ -10,6 +10,22 @@ html, body {
     width: 100%;
 }
 
+@keyframes roller-coaster {
+    from {
+        /* opacity: 0; */
+        transform: skew(0) rotateX(0);
+    }
+
+    to {
+        /* opacity: 1.0; */
+        transform: skew(180deg) rotateX(180deg);
+    }
+
+    /* 100% {
+        /* opacity: 0; */
+        /* transform: rotate(-90deg); */
+    } */
+
 .picture-frame {
     width: 100%;
     /* border: 3px solid green; */
@@ -18,7 +34,7 @@ html, body {
     align-items: center;
     height: 200px;
     /* overflow: hidden; */
-    margin: 20px;
+    /* margin: -20px; */
     /* background: white */
 }
 
@@ -37,12 +53,12 @@ html, body {
 
 .picture-frame img {
     /* width: 100%; */
-    /* padding: 10%; */
-    /* border: 3px solid orange; */
+    padding: 10%;
+    border: 3px solid orange;
     /* min-height: 400px; */
     max-height: 100%;
     max-width: 100%;
-    transition: transform 1000ms ease-in-out;
+    /* transition: transform 1000ms ease-in-out; */
     /* opacity: 0.6; */
     /* 
         1. property names or the word 'all'
@@ -52,7 +68,10 @@ html, body {
 }
 
 .picture-frame img.big {
-    transform: scale(4.0)
+    /* transform: scale(4.0) */
+    animation: roller-coaster 2s infinite;
+    opacity: 1;
+    border-radius: 50%;
 }
 
 .dog-park {
