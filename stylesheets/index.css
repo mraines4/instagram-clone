@@ -11,7 +11,7 @@ html, body {
 }
 
 .picture-frame {
-    width: 33%;
+    /* width: 33%; */
     /* border: 3px solid green; */
     display: flex;
     justify-content: center;
