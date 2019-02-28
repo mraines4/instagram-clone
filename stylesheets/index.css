@@ -28,7 +28,7 @@ html, body {
 
 .picture-frame {
     width: 100%;
-    /* border: 3px solid green; */
+    border: 3px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,12 +54,12 @@ html, body {
 .picture-frame img {
     /* width: 100%; */
     padding: 10%;
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     /* min-height: 400px; */
     max-height: 100%;
     max-width: 100%;
     /* transition: transform 1000ms ease-in-out; */
-    /* opacity: 0.6; */
+    opacity: 0.6;
     /* 
         1. property names or the word 'all'
         2. duration in seconds or ms
@@ -72,6 +72,11 @@ html, body {
     animation: roller-coaster 2s infinite;
     opacity: 1;
     border-radius: 50%;
+}
+
+.picture-frame p.big {
+    /* transition: transform .3s ease-in-out, opacity 1s linear; */
+    color: green;
 }
 
 .dog-park {
