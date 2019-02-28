@@ -12,29 +12,29 @@ html, body {
 
 .picture-frame {
     /* width: 33%; */
-    border: 3px solid green;
+    /* border: 3px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     /* overflow: hidden; */
-    padding: 10%;
+    margin: 20px;
     /* background: white */
 }
+
 
 .picture-frame img {
     /* width: 100%; */
     /* padding: 10%; */
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     /* min-height: 400px; */
     height: 200px;
-
 }
 
 .dog-park {
     /* if you set height, thats how big element will be no matter what. dogs will overflow */
     /* min-height: 500px; */
-    border: 5px solid gold;
+    /* border: 5px solid gold; */
     display: flex;
     flex-direction: column;
     /* how to line up on main axis */
@@ -50,9 +50,9 @@ html, body {
         background: red;
     }
     .picture-frame {
-        width: 50%;
-        padding: 10%;
-        height: 100px;
+        /* width: 50%; */
+        /* padding: 10%; */
+        height: 200px;
     }
     .dog-park {
         flex-direction: row;
@@ -74,6 +74,6 @@ html, body {
     
     .picture-frame {
         height: 200px;
-        padding: 10%;
+        /* padding: 10%; */
     }
 }
