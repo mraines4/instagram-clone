@@ -11,16 +11,29 @@ html, body {
 }
 
 .picture-frame {
-    /* width: 33%; */
+    width: 33%;
     /* border: 3px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     /* overflow: hidden; */
-    padding: 10%;
+    margin: 20px;
     /* background: white */
 }
+
+/* use the :hover pseudo-class */
+.picture-frame:hover {
+    outline: 2px solid red;
+    /* transform: scale(1.10); */
+}
+
+.picture-frame:hover img {
+    /* outline: 2px solid red; */
+    transform : scale(1.10);
+    opacity: 1.0;
+}
+
 
 .picture-frame img {
     /* width: 100%; */
@@ -28,7 +41,6 @@ html, body {
     /* border: 3px solid orange; */
     /* min-height: 400px; */
     height: 200px;
-
 }
 
 .dog-park {
@@ -50,9 +62,9 @@ html, body {
         background: red;
     }
     .picture-frame {
-        width: 50%;
-        padding: 10%;
-        height: 100px;
+        /* width: 50%; */
+        /* padding: 10%; */
+        height: 200px;
     }
     .dog-park {
         flex-direction: row;
@@ -74,6 +86,6 @@ html, body {
     
     .picture-frame {
         height: 200px;
-        padding: 10%;
+        /* padding: 10%; */
     }
 }
