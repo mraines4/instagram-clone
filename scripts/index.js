@@ -12,6 +12,7 @@ const bigPic = document.querySelector('[data-output]');
 function respondToClick(event) {
     imgSrc = event.target.getAttribute('src')
     bigPic.src = imgSrc;
+    bigPic.classList.remove('hidden');
 }
 
 function attachClickHandler(oneElement) {
@@ -25,5 +26,5 @@ targetElements.forEach(attachClickHandler);
 bigPic.addEventListener('click', hideAway);
 
 function hideAway (event) {
-    event.target.classList.toggle('hidden');
+    event.target.classList.add('hidden');
 }
