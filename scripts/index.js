@@ -21,3 +21,9 @@ function attachClickHandler(oneElement) {
 
 
 targetElements.forEach(attachClickHandler);
+
+bigPic.addEventListener('click', hideAway);
+
+function hideAway (event) {
+    event.target.classList.toggle('hidden');
+}
