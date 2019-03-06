@@ -59,7 +59,7 @@ html, body {
     max-height: 100%;
     max-width: 100%;
     /* transition: transform 1000ms ease-in-out; */
-    opacity: 0.6;
+    opacity: 1;
     /* 
         1. property names or the word 'all'
         2. duration in seconds or ms

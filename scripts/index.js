@@ -26,3 +26,5 @@ function attachClickHandler(oneElement) {
 
 
 targetElements.forEach(attachClickHandler);
+
+const bigPic = document.querySelector('[data-output]');
