@@ -10,25 +10,81 @@ html, body {
     width: 100%;
 }
 
+@keyframes roller-coaster {
+    from {
+        /* opacity: 0; */
+        transform: skew(0) rotateX(0);
+    }
+
+    to {
+        /* opacity: 1.0; */
+        transform: skew(180deg) rotateX(180deg);
+    }
+
+    /* 100% {
+        /* opacity: 0; */
+        /* transform: rotate(-90deg); */
+    } */
+
 .picture-frame {
-    /* width: 33%; */
-    /* border: 3px solid green; */
+    width: 100%;
+    border: 3px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     /* overflow: hidden; */
-    margin: 20px;
+    /* margin: -20px; */
     /* background: white */
 }
 
+/* use the :hover pseudo-class */
+.picture-frame:hover {
+    /* outline: 2px solid red; */
+    /* transform: scale(1.10); */
+}
+
+.picture-frame:hover img {
+    /* outline: 2px solid red; */
+    transform : scale(1.10);
+    opacity: 1;
+}
+
+
 .picture-frame img {
     /* width: 100%; */
-    /* padding: 10%; */
+    padding: 10%;
     /* border: 3px solid orange; */
     /* min-height: 400px; */
-    max-height: 80%;
-    max-width: 80%;
+    max-height: 100%;
+    max-width: 100%;
+    /* transition: transform 1000ms ease-in-out; */
+    opacity: 1;
+    /* 
+        1. property names or the word 'all'
+        2. duration in seconds or ms
+        3. timing function
+    */
+}
+
+.top-image {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.picture-frame img.big {
+    /* transform: scale(4.0) */
+    animation: roller-coaster 2s infinite;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.picture-frame p.big {
+    /* transition: transform .3s ease-in-out, opacity 1s linear; */
+    color: green;
 }
 
 .dog-park {
@@ -50,9 +106,9 @@ html, body {
         background: red;
     }
     .picture-frame {
-        /* width: 50%; */
+        width: 25%;
         /* padding: 10%; */
-        height: 200px;
+        /* height: 200px; */
     }
     .dog-park {
         flex-direction: row;
@@ -73,7 +129,9 @@ html, body {
     }
     
     .picture-frame {
-        height: 200px;
+        /* height: 200px; */
         /* padding: 10%; */
+        width: 25%;
+
     }
 }
