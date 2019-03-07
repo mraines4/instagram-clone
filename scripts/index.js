@@ -28,3 +28,34 @@ bigPic.addEventListener('click', hideAway);
 function hideAway (event) {
     event.target.classList.add('hidden');
 }
+
+const data = [
+    'http://www.reddit.com',
+    'http://www.facebook.com',
+    'http://www.espn.com',
+];
+
+function goAfter2Seconds(url) {
+    setTimeout(function () {
+        window.location = url;
+    }, 2000)
+}
+
+function logIt(event) {
+    event.preventDefault();
+    console.log(`you clicked ${event.target.href}`)
+    goAfter2Seconds(event.target.href)
+}
+
+const navElement = document.querySelector('[data-nav]');
+navElement.addEventListener('click', logIt)
+
+data.forEach(function (url) {
+    const newAnchor = document.createElement('a');
+    newAnchor.textContent = url;
+    newAnchor.setAttribute('href', url);
+
+    // newAnchor.addEventListener('click', logIt)
+
+    navElement.append(newAnchor);
+});
