@@ -10,9 +10,11 @@ const bigPic = document.querySelector('[data-output]');
 // inside that.picture-frame
 
 function respondToClick(event) {
-    imgSrc = event.target.getAttribute('src')
+  // don't forget to use `let` or `const` when first assigning
+  // a variable!
+    imgSrc = event.target.getAttribute('src');
     bigPic.src = imgSrc;
-    bigPic.classList.remove('hidden');
+    bigPic.classList.remove('hidden'); // nice.
 }
 
 function attachClickHandler(oneElement) {
@@ -38,17 +40,17 @@ const data = [
 function goAfter2Seconds(url) {
     setTimeout(function () {
         window.location = url;
-    }, 2000)
+    }, 2000);
 }
 
 function logIt(event) {
-    event.preventDefault();
-    console.log(`you clicked ${event.target.href}`)
-    goAfter2Seconds(event.target.href)
+  event.preventDefault();
+  console.log(`you clicked ${event.target.href}`); // Don't forget those semi-colons!
+  goAfter2Seconds(event.target.href);
 }
 
 const navElement = document.querySelector('[data-nav]');
-navElement.addEventListener('click', logIt)
+navElement.addEventListener('click', logIt);
 
 data.forEach(function (url) {
     const newAnchor = document.createElement('a');
